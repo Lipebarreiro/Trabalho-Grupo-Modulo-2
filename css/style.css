@@ -4,7 +4,11 @@
   padding: 0;
 }
 
-body{
+html {
+  scroll-behavior: smooth;
+}
+
+body {
   background-color: white;
 }
 
@@ -12,15 +16,6 @@ header {
   position: fixed;
   width: 100%;
   z-index: 2;
-}
-
-.a {
-  text-decoration: none;
-  color: white;
-}
-
-.a:hover {
-  color: #eca1ec;
 }
 
 a {
@@ -32,8 +27,21 @@ a:hover {
   color: #eca1ec;
 }
 
-.inscrever2 {
+.menu a {
+  text-decoration: none;
+  color: white;
+}
+
+.menu a:hover {
+  color: #eca1ec;
+}
+
+.inscrever a {
   color: black;
+}
+
+.inscrever a:hover {
+  color: #eca1ec;
 }
 
 .menu {
@@ -42,6 +50,10 @@ a:hover {
   flex-direction: row;
   align-items: center;
   font-size: 20px;
+}
+
+.indexMain {
+  padding-top: 100px;
 }
 
 .img {
@@ -84,9 +96,9 @@ footer {
 .rodape {
   display: flex;
   flex-direction: row;
-  padding-left: 100px;
+  justify-content: space-between;
+  /* padding-left: 100px; */
   padding-top: 30px;
-  align-items: center;
 }
 
 /* texto frontenders */
@@ -106,7 +118,7 @@ footer {
   text-shadow: 0 0 0.2em rgb(235, 235, 235), 0 0 0.2em rgb(158, 158, 158);
 }
 
-/* texto contato e nos siga nas nossas redes */
+/* titulos contato e redes sociais */
 .Pitem1 {
   font-size: 30px;
   font-weight: 900;
@@ -116,15 +128,18 @@ footer {
 }
 
 .Pitem2 {
+  padding-right: 100px;
   font-size: 30px;
   font-weight: 900;
   text-align: center;
-  padding-left: 450px;
 }
 
+/* icones contato */
 .logos {
-  width: 50px;
-  height: 30px;
+  width: 35px;
+  height: 25px;
+  padding-right: 10px;
+  margin-bottom: 5px;
 }
 
 /* grupo redes */
@@ -147,21 +162,23 @@ footer {
 
 /* itens do grupo redes */
 .lista2 {
-  padding-left: 500px;
+  margin-left: 10px;
   padding-top: 15px;
   height: 90px;
   font-size: 20px;
 }
 
+/* icones redes sociais */
 .logo2 {
   width: 35px;
   height: 25px;
   padding-right: 10px;
+  margin-bottom: 3px;
 }
 
 .logo3 {
-  width: 55px;
-  height: 35px;
+  width: 35px;
+  height: 25px;
   padding-right: 5px;
 }
 
@@ -171,21 +188,20 @@ footer {
   padding-right: 10px;
 }
 
-/* carrosel */
-#carouselExampleSlidesOnly {
-  width: 1000px;
-  padding: 0px 0px 60px 80px;
+/* carrosel index */
+.d-block {
+  height: 500px;
+  width: 10px;
 }
 
-
-
-.carouselSlide {
-  
+#carouselExampleSlidesOnly {
+  width: 1000px;
+  padding: 0px 0px 50px 50px;
 }
 
 /* login */
 .login {
-  padding: 200px 50px 200px 50px;
+  padding: 180px;
 }
 
 .cadastro {
@@ -195,10 +211,6 @@ footer {
 /* utilização do display */
 .ladoalado {
   display: flex;
-}
-
-.teste {
-  padding: 200px 0px 0px 100px;
 }
 
 /* caixa mais clara com logos */
@@ -217,6 +229,7 @@ footer {
   border-bottom: 3px solid #000000;
   background-color: #56034a;
   color: white;
+  text-align: center;
 }
 
 /* logos so da parte da caixa */
@@ -228,6 +241,7 @@ footer {
 .logos2 {
   width: 40px;
   height: 30px;
+  padding-right: 10px;
 }
 
 /* feedback */
@@ -271,26 +285,26 @@ footer {
 }
 
 .logos5 {
-  width: 50px;
-  height: 40px;
+  width: 35px;
+  height: 25px;
+  margin-right: 10px;
 }
 
 .textindex1 {
   color: rgb(0, 0, 0);
   text-decoration: underline #56034a;
   background-color: #f7c0f7;
-  margin-right: 100px;
   font-size: 60px;
   border-radius: 20px;
-  margin-bottom: 20px;
-  padding: 20px;
+  margin: 0px 20px 30px 30px;
+  padding: 20px 0px 30px 50px;
 }
 
 .textindex2 {
   color: #000000;
   text-decoration: underline #871487;
   padding-bottom: 30px;
-  margin-right: 280px;
+  padding-left: 50px;
 }
 
 .textoindex3 {
@@ -301,6 +315,7 @@ footer {
   border: 2px solid #0e0e0e;
   border-radius: 25px;
   margin-bottom: 60px;
+  margin-left: 50px;
 }
 
 .textoindex4 {
@@ -326,6 +341,26 @@ footer {
   color: blue;
 }
 
+/*botao carrosel da pagina pacotes */
+.btn-primary {
+  margin-bottom: 150PX;
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #56034a;
+  --bs-btn-border-color: #56034a;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #56034a;
+  --bs-btn-hover-border-color: #56034a;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #eca1ec;
+  --bs-btn-active-border-color: #56034a;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #fff;
+  --bs-btn-disabled-border-color: #56034a;
+}
+
+/* botoes enviar, cadastrar, mais informações */
 .btn-danger {
   --bs-btn-color: #fff;
   --bs-btn-bg: #56034a;
@@ -342,21 +377,7 @@ footer {
   color: #37022f;
 }
 
-.btn-primary {
-  --bs-btn-color: #fff;
-  --bs-btn-bg: #56034a;
-  --bs-btn-border-color: #56034a;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #56034a;
-  --bs-btn-hover-border-color: #56034a;
-  --bs-btn-focus-shadow-rgb: 49,132,253;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #eca1ec;
-  --bs-btn-active-border-color: #56034a;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #fff;
-  --bs-btn-disabled-border-color: #56034a;
-  MARGIN-bottom: 150PX;
+textarea {
+  resize: none;
 }
 
