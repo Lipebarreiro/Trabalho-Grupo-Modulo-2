@@ -25,12 +25,13 @@
     </header>
 
     <main>
-        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div id="myCarousel" class="carousel slide">
             <div class="carousel-indicators">
-                <button onclick="esconderInfo()" type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button onclick="esconderInfo()" type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button onclick="esconderInfo()" type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button id="sumir" onclick="esconderInfo()" type="button" data-bs-slide-to="0" class="active"></button>
+                <button id="sumir" onclick="esconderInfo()" type="button" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button id="sumir" onclick="esconderInfo()" type="button" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -44,7 +45,8 @@
                             <h1>Faça o curso do seu sucesso!</h1>
                             <p>Desenvolvedor Front End</p>
                             <p>Por: 2.890,00 ou 10x de 290,00</p>
-                            <p> <button onclick="saiba()" id="maisInformacoes1" class="btn btn-lg btn-primary" href="#"> Mais informações </button></p>
+                            <p> <button onclick="saiba()" id="maisInformacoes1" class="btn btn-lg btn-primary" href="#">
+                                    Mais informações </button></p>
                         </div>
                     </div>
                 </div>
@@ -59,7 +61,8 @@
                             <h1>Faça o curso do seu sucesso!</h1>
                             <p>Desenvolvedor Back End</p>
                             <p>Por: 2.990,00 ou 10x de 299,90</p>
-                            <p> <button onclick="saiba2()" id="maisInformacoes1" class="btn btn-lg btn-primary" href="#"> Mais informações </button></p>
+                            <p> <button onclick="saiba2()" id="maisInformacoes1" class="btn btn-lg btn-primary"
+                                    href="#"> Mais informações </button></p>
                         </div>
                     </div>
                 </div>
@@ -74,42 +77,95 @@
                             <h1 class="textocarrosel">Faça o curso do seu sucesso!</h1>
                             <p>Desenvolvedor Full Stack</p>
                             <p>Por: 3.590,00 ou 10x de 359,90</p>
-                            <p> <button onclick="saiba3()" id="maisInformacoes1" class="btn btn-lg btn-primary" href="#"> Mais informações </button></p>
+                            <p> <button onclick="saiba3()" id="maisInformacoes1" class="btn btn-lg btn-primary"
+                                    href="#"> Mais informações </button></p>
                         </div>
                     </div>
                 </div>
             </div>
-            <button onclick="esconderInfo()" class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <button onclick="esconderInfo()" class="carousel-control-prev" type="button" data-bs-target="#myCarousel"
+                data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button onclick="esconderInfo()" class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <button onclick="esconderInfo()" class="carousel-control-next" type="button" data-bs-target="#myCarousel"
+                data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
 
         <section id="saibaMais">
-            
-            FRONT END
-            <img src="./imagens/fotofelipe.jpeg" height="500px">
-
-
+            <h2 class="lua">
+              <strong><center>FRONT END</center></strong>
+            </h2>
+            <h4><strong> Formação Completa!</strong></h4>
+            <div class="tamanhotexto">
+              Duração de 8 meses com cerca de 144 horas de aula on-line. Aula toda
+              terça e quinta na plataforma.<br />
+              <br />
+              APRENDA:<em><strong> HTML, CSS, JavaScript, Ajax e APIs. </strong></em>
+              <br />
+    
+              No curso você vai:<br />
+    
+              Aprender a criar páginas e apps com layout atraentes e
+              profissionais;<br />
+              Aprender como se portar e conseguir um bom emprego; <br />
+              Ter Feedbacks individualizado; <br />
+              Professoras de grande conhecimento na área; <br />
+              Realizar 5 projetos para seu portfólio; <br />
+              Ter a oportunidade de estagiar conosco ou empresas parceiras.<br />
+            </div>
+          </section>
+          <section id="saibaMais2">
+            <h2 class="lua">
+              <strong><center>BACK END</center></strong>
+            </h2>
+            <h4><strong> Formação completa! </strong></h4>
+            <div class="tamanhotexto">
+              Duração de 9 meses com cerca de 162 horas de aula on-line. Aula toda
+              terça e quinta na plataforma.<br />
+              <br />
+              APRENDA:<em><strong> Ruby, Java, Clojure e node.js.</strong></em
+              ><br />
+              <br />
+    
+              No curso você vai:<br />
+    
+              Aprender tudo por trás de uma aplicação, programar com banco de dados;
+              <br />
+              Aprender como se portar e conseguir um bom emprego; <br />
+              Ter Feedbacks individualizado; <br />
+              Professoras de grande conhecimento na área; <br />
+              Realizar 5 projetos para seu portfólio; <br />
+              Ter a oportunidade de estagiar conosco ou empresas parceiras.
+            </div>
+          </section>
+          <section id="saibaMais3">
+            <h2 class="lua">
+                <strong><center> FULL STACK</center></strong>
+              </h2>
+            <h4><strong> Formação completa! </strong></h4>
+            <div class="tamanhotexto">
+                Duração de 15 meses com cerca de 270 horas de aula on-line. Aula toda
+                terça e quinta na plataforma.<br />
+                <br />
+                APRENDA:<em><strong> PHP, Ruby, Java, Clojure, node.js, HTML, CSS, JavaScript, Ajax e APIs.</strong></em
+                ><br />
+                <br />
+      
+                No curso você vai:<br />
+      
+                Aprender tudo por trás de uma aplicação, programar com banco de dados;
+                <br />
+                Aprender como se portar e conseguir um bom emprego; <br />
+                Ter Feedbacks individualizado; <br />
+                Professoras de grande conhecimento na área; <br />
+                Realizar 5 projetos para seu portfólio; <br />
+                Ter a oportunidade de estagiar conosco ou empresas parceiras.
+              </div>
         </section>
-        <section id="saibaMais2">
-
-            BACK END
-            
-            <img src="./imagens/fotofelipe.jpeg" height="500px">
-
-        </section>
-
-        <section id="saibaMais3"> 
-
-            DEV FULL STACK 
-            <img src="./imagens/fotofelipe.jpeg" height="500px">
-        </section>
-
     </main>
 
     <footer>
