@@ -89,7 +89,7 @@ a:hover {
 
 /* rodapé */
 footer {
-  background-color: #37022f;
+  background-color: #250120;
 }
 
 /* container rodape */
@@ -205,7 +205,7 @@ footer {
 }
 
 .cadastro {
-  padding: 100px
+  padding: 100px 100px 30px 100px
 }
 
 /* utilização do display */
@@ -380,4 +380,3 @@ footer {
 textarea {
   resize: none;
 }
-

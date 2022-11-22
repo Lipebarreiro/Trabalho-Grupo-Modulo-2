@@ -24,50 +24,45 @@
   </header>
 
   <main class="cadastro">
-    <div class="mb-3">
-      <label for="exampleFormControlInput1" class="form-label">Nome e sobrenome:</label>
-      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nome">
-    </div>
-    <div class="mb-3">
-      <label for="exampleFormControlInput1" class="form-label">Endereço de email:</label>
-      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
-    </div>
-    <div class="mb-3">
-      <label for="exampleFormControlInput1" class="form-label">Crie uma senha:</label>
-      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="********">
-    </div>
-    <div class="mb-3">
-      <label for="exampleFormControlInput1" class="form-label">Digite novamente sua senha:</label>
-      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="********">
-    </div>
-    <div class="mb-3">
-      <label for="exampleFormControlInput1" class="form-label">Digite seu RG:</label>
-      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="00000000-0">
-    </div>
-    <div class="mb-3">
-      <label for="exampleFormControlInput1" class="form-label">Digite seu CEP:</label>
-      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="00000000">
-    </div>
-    <div class="mb-3">
-      <label for="exampleFormControlInput1" class="form-label">Bairro:</label>
-      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="ex: Madureira">
-    </div>
-    <div class="mb-3">
-      <label for="exampleFormControlInput1" class="form-label">Logadouro:</label>
-      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="ex: rua ...">
-    </div>
-    <div class="mb-3">
-      <label for="exampleFormControlInput1" class="form-label">Número:</label>
-      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="00">
-    </div>
-    <div class="mb-3">
-      <label for="exampleFormControlInput1" class="form-label">Complemento:</label>
-      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="ex: apartamento">
-    </div>
-    <button type="button" class="btn btn-danger">Cadastrar</button>
-  </main>
+    <label for="exampleFormControlInput1" class="form-label">Nome e sobrenome:</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nome"> <br/>
+  
+    <label for="exampleFormControlInput1" class="form-label">Endereço de email:</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com"> <br/>
+  
 
-  <footer>
+    <label for="exampleFormControlInput1" class="form-label">Crie uma senha:</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="********"> <br/>
+  
+    <label for="exampleFormControlInput1" class="form-label">Digite novamente sua senha:</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="********"> <br/>
+  
+    <label for="exampleFormControlInput1" class="form-label">Digite seu RG:</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="00000000-0"> <br/>
+    
+     
+      <form method="get" action=".">
+        <label class="form-label"> CEP: </label>
+        <input class="form-control" name="cep" type="text" id="cep" value="" size="10" maxlength="9" placeholder="00000000"
+               onblur="pesquisacep(this.value);"> <br/>
+        <label class="form-label">Logadouro: </label>
+        <input name="rua" class="form-control" type="text" id="rua" size="60" /></label><br />
+        <label class="form-label"> Bairro: </label>
+        <input name="bairro" class="form-control" type="text" id="bairro" size="40" /></label><br />
+        <label class="form-label" >Cidade: </label>
+        <input name="cidade" class="form-control" type="text" id="cidade" size="40" /></label><br />
+        <label class="form-label">Estado: </label>
+        <input name="uf" class="form-control" type="text" id="uf" size="2" /></label><br />
+        <label for="exampleFormControlInput1" class="form-label">Número:</label>
+        <input type="email" class="form-control" id="numero" placeholder="00"> <br/>
+      
+        <label for="exampleFormControlInput1" class="form-label">Complemento:</label>
+        <input type="email" class="form-control" id="complemento" placeholder="ex: apartamento">
+          <br>
+      <button type="button" class="btn btn-danger">Cadastrar</button>
+      </form>
+  </main>
+<footer>
     <div class="text">FrontEnders</div>
     <div class="rodape">
       <div class="part1">
@@ -84,8 +79,8 @@
       </div>
     </div>
   </footer>
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
